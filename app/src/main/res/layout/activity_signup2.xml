@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    //Header
+
+    <LinearLayout style="@style/headerLinearLayout">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            style="@style/headerImageBack" />
+
+        <TextView
+            style="@style/headerTextStyle"
+            android:text="Đăng ký tài khoản" />
+    </LinearLayout>
+
+    //Title
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="Ảnh đại diện"
+        android:textColor="@color/colorTextActive"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    //Avatar
+
+
+    <ImageView
+        android:id="@+id/imgAvatar"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:background="@drawable/border"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_user" />
+
+    //Input form
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/marginBody"
+        android:layout_marginVertical="30dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnGallery"
+                style="@style/button"
+                android:layout_height="40dp"
+                android:background="@drawable/red_border_radius"
+                android:text="Album ảnh"
+                android:textColor="@color/colorRedBorder"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnCamera"
+                style="@style/button"
+                android:layout_height="40dp"
+                android:background="@drawable/blue_border_radius"
+                android:text="Mở Camera"
+                android:textColor="@color/colorBlueBorder"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSignup"
+        style="@style/button"
+        android:layout_gravity="center"
+        android:background="@color/colorButtonBackground"
+        android:text="ĐĂNG KÝ"
+        android:textColor="@color/colorButtonText" />
+
+</LinearLayout>

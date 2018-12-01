@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    //Header
+
+    <LinearLayout style="@style/headerLinearLayout">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            style="@style/headerImageBack" />
+
+        <TextView
+            style="@style/headerTextStyle"
+            android:text="Cập nhập thông tin cá nhân" />
+    </LinearLayout>
+
+    //Input form
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/marginBody"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/marginItem"
+            android:layout_marginTop="@dimen/marginItem"
+            android:gravity="left"
+            android:text="Họ tên" />
+
+        <EditText
+            android:id="@+id/edtFullname"
+            style="@style/editText"
+            android:hint="Họ tên"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/marginItem"
+            android:layout_marginTop="@dimen/marginItem"
+            android:gravity="left"
+            android:text="Số điện thoại" />
+
+        <EditText
+            android:id="@+id/edtPhone"
+            style="@style/editText"
+            android:hint="Số điện thoại"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/marginItem"
+            android:layout_marginTop="@dimen/marginItem"
+            android:gravity="left"
+            android:text="Địa chỉ" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/marginItem"
+            android:background="@drawable/border_read_only">
+
+            <Spinner
+                android:id="@+id/spinnerAddress"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingHorizontal="@dimen/paddingItem"
+                android:textColor="@color/colorEditText"></Spinner>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSave"
+            style="@style/button"
+            android:layout_margin="30dp"
+            android:background="@color/colorButtonBackground"
+            android:text="Cập nhập"
+            android:textColor="@color/colorButtonText" />
+    </LinearLayout>
+
+</LinearLayout>

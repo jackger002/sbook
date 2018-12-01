@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingVertical="@dimen/paddingItem">
+
+    //Contact
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginHorizontal="@dimen/marginItem"
+        android:orientation="horizontal">
+
+        //Avatar
+
+        <ImageView
+            android:id="@+id/imgAvatar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/nancy_korea" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/marginItem"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            //Họ tên
+
+            <TextView
+                android:id="@+id/txtUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                android:text="Nguyễn Cảnh Toàn"
+                android:textColor="@color/colorText"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            //Địa chỉ
+
+            <TextView
+                android:id="@+id/txtAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                android:text="TP HCM"
+                android:textColor="@color/colorEditText"
+                android:textSize="8sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right">
+
+            //Liên hệ
+
+            <Button
+                android:id="@+id/btnContact"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/blue_border_radius"
+                android:text="LIÊN HỆ"
+                android:textColor="@color/colorBlueBorder"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    //Tiêu đề sách
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/marginItem">
+
+        //Tiêu đề sách + tác giả
+
+        <TextView
+            android:id="@+id/txtTitleAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:paddingVertical="@dimen/paddingItem"
+            android:text="Nhà giả kim - Paulo Coelho"
+            android:textColor="@color/colorText"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    //Ảnh sách
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <ImageView
+            android:id="@+id/imgBook"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/border"
+            android:padding="1dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/nhagiakim"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/colorRed"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp"
+            android:text="ĐÃ BÁN"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    //Like, Share, Comment
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginHorizontal="@dimen/marginItem"
+        android:paddingVertical="@dimen/paddingItem"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <ImageView
+                android:id="@+id/icHeart"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_red_heart" />
+
+            <TextView
+                android:id="@+id/txtHeart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/paddingItem"
+                android:text="6,969"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <ImageView
+                android:id="@+id/icComment"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_comment" />
+
+            <TextView
+                android:id="@+id/txtComment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/paddingItem"
+                android:text="6,969"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <ImageView
+                android:id="@+id/icShare"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_share" />
+
+            <TextView
+                android:id="@+id/txtShare"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/paddingItem"
+                android:text="6,969"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="right">
+
+            <ImageView
+                android:id="@+id/icMenu"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_three_dots" />
+        </LinearLayout>
+    </LinearLayout>
+
+    //Mô tả
+
+    <TextView
+        android:id="@+id/txtDescription"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginHorizontal="@dimen/marginItem"
+        android:paddingVertical="@dimen/paddingItem"
+        android:text="Tất cả những trải nghiệm trong chuyến phiêu du theo đuổi vận mệnh của mình đã giúp Santiago thấu hiểu được ý nghĩa sâu xa nhất của hạnh phúc, hòa hợp với vũ trụ và con người..."
+        android:textColor="@color/colorEditText"
+        android:textSize="14sp" />
+
+    //Giá Bán
+
+    <TextView
+        android:id="@+id/txtPrice"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginHorizontal="@dimen/marginItem"
+        android:background="@drawable/red_border"
+        android:gravity="center"
+        android:text="69.000$"
+        android:textColor="@color/colorRedBorder"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

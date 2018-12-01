@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    //Header
+
+    <LinearLayout style="@style/headerLinearLayout">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            style="@style/headerImageBack" />
+
+        <TextView
+            style="@style/headerTextStyle"
+            android:text="Đăng ký tài khoản" />
+    </LinearLayout>
+
+    //Input form
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/marginBody"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edtFullname"
+            style="@style/editText"
+            android:hint="Họ tên"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/edtPhone"
+            style="@style/editText"
+            android:hint="Số điện thoại"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            style="@style/editText"
+            android:hint="Email"
+            android:inputType="text" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/marginItem"
+            android:background="@drawable/border_read_only">
+
+            <Spinner
+                android:id="@+id/spinnerAddress"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingHorizontal="@dimen/paddingItem"
+                android:textColor="@color/colorEditText"></Spinner>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edtPassword"
+            style="@style/editText"
+            android:hint="Mật khẩu"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/edtConfirmPassword"
+            style="@style/editText"
+            android:hint="Xác nhận mật khẩu"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btnContinue"
+            style="@style/button"
+            android:layout_margin="30dp"
+            android:background="@color/colorButtonBackground"
+            android:text="TIẾP TỤC"
+            android:textColor="@color/colorButtonText" />
+    </LinearLayout>
+
+</LinearLayout>

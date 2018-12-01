@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "963010266558",
+    "firebase_url": "https://sbook-6be8c.firebaseio.com",
+    "project_id": "sbook-6be8c",
+    "storage_bucket": "sbook-6be8c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:963010266558:android:9a94697a9eee626f",
+        "android_client_info": {
+          "package_name": "com.jackger.demo.sbook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "963010266558-9cck6psm23cu52n2goot0saod6cbkp48.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jackger.demo.sbook",
+            "certificate_hash": "d203f60889917e5b616a33a5efb6df255290a769"
+          }
+        },
+        {
+          "client_id": "963010266558-selogu3u5jji4nbe2j2i3eirka7q5fvi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAadYe2KXbDOKhg4WRPeTtQnZEwlhFrJl8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "963010266558-selogu3u5jji4nbe2j2i3eirka7q5fvi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

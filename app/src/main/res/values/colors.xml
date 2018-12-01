@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    //Backgroud
+    <color name="colorbackgroudDialog">#4CAF50</color>
+
+    //Button
+    <color name="colorButtonBackground">#4CAF50</color>
+    <color name="colorButtonText">#fff</color>
+
+    //EditText
+    <color name="colorEditText">#555</color>
+
+    //TextView
+    <color name="colorText">#333</color>
+    <color name="colorTextActive">#4CAF50</color>
+    <color name="colorTextHearder">#fff</color>
+
+    //Read Only
+    <color name="colorReadOnly">#f1f1f1</color>
+
+    //Border
+    <color name="colorRedBorder">#f00</color>
+    <color name="colorBlueBorder">#00f</color>
+
+    //color
+    <color name="colorRed">#da2e2e</color>
+    <color name="colorGreen">#4CAF50</color>
+    <color name="colorWhite">#fff</color>
+
+    //header
+    <color name="colorHeaderBackground">#4CAF50</color>
+    <color name="colorHeaderText">#ffffff</color>
+
+</resources>

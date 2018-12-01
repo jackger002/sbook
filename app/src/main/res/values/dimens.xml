@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    //margin
+    <dimen name="marginItem">6dp</dimen>
+    <dimen name="marginBody">10dp</dimen>
+
+    //padding
+    <dimen name="paddingItem">4dp</dimen>
+    <dimen name="paddingEditText">10dp</dimen>
+    <dimen name="paddingButtonVertical">10dp</dimen>
+    <dimen name="paddingButtonHorizontal">20dp</dimen>
+
+    //radius size
+    <dimen name="radiusSize">4dp</dimen>
+
+    //item lvPost height
+    <dimen name="lvPost_height">520dp</dimen>
+
+    //header
+    <dimen name="header_height">40dp</dimen>
+
+</resources>
